@@ -1,0 +1,26 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-kpicard',
+  imports: [],
+  templateUrl: './kpicard.html',
+  styleUrl: './kpicard.css',
+})
+export class Kpicard {
+  cards  = [
+    {
+      title: 'Total Active Shipments', numberData: 1240, percentageData: 5,logo: 'local_shipping', trending: true
+    },
+    {
+      title: 'In transit', numberData: 845, percentageData: 12, logo: 'near_me', trending: true
+    },
+    {
+      title: 'Exceptions', numberData: 12, percentageData: 2, logo: 'warning', trending: false
+    },
+    {
+      title: 'Revenue(MTD)', numberData: 450, percentageData:8, logo: 'payments', trending: true
+    }
+
+    ];
+
+}
