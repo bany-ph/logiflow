@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-kpicard',
   imports: [],
   templateUrl: './kpicard.html',
-  styleUrl: './kpicard.css',
 })
 export class Kpicard {
   cards  = [
@@ -22,5 +21,4 @@ export class Kpicard {
     }
 
     ];
-
 }
