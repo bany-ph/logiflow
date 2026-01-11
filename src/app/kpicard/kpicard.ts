@@ -1,24 +1,36 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-kpicard',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './kpicard.html',
 })
 export class Kpicard {
-  cards  = [
+
+  cards : Card[] = [
     {
-      title: 'Total Active Shipments', numberData: 1240, percentageData: 5,logo: 'local_shipping', trending: true
+      title: 'Total Active Shipments', numberData: 1240, percentageData: 5,logo: 'local_shipping', logoColor: 'blue', trending: true
     },
     {
-      title: 'In transit', numberData: 845, percentageData: 12, logo: 'near_me', trending: true
+      title: 'In transit', numberData: 845, percentageData: 12, logo: 'near_me',logoColor: 'indigo', trending: true
     },
     {
-      title: 'Exceptions', numberData: 12, percentageData: 2, logo: 'warning', trending: false
+      title: 'Exceptions', numberData: 12, percentageData: 2, logo: 'warning',logoColor: 'red', trending: false
     },
     {
-      title: 'Revenue(MTD)', numberData: 450, percentageData:8, logo: 'payments', trending: true
+      title: 'Revenue(MTD)', numberData: 450, percentageData:8, logo: 'payments', logoColor: 'emerald', trending: true
     }
 
     ];
 }
+
+interface Card {
+  title: string;
+  numberData: number;
+  percentageData: number;
+  logo: string;
+  logoColor: string;
+  trending: boolean;
+}
+

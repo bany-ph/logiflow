@@ -11,6 +11,6 @@ import {MainTitle} from '../main-title/main-title';
   templateUrl: './dashboard.html'
 })
 export class Dashboard {
-  pageTitle = 'Dashboard';
+  pageTitle = 'Dashboard Overview';
   pageDescription = 'Real-time logistic metrics and fleet status.';
 }
