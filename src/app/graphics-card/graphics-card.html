@@ -1,0 +1,54 @@
+<div class="flex flex-col gap-6">
+  <!-- Volume Chart -->
+  <div
+    class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-6 flex flex-col h-full"
+  >
+    <div class="flex items-center justify-between mb-6">
+      <div>
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white">Shipment Volume by Region</h3>
+        <p class="text-sm text-slate-500">Last 30 Days Performance</p>
+      </div>
+      <button class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200">
+        <span class="material-symbols-outlined">more_horiz</span>
+      </button>
+    </div>
+    <div class="flex-1 min-h-[200px] flex items-end justify-around pb-2">
+      <!-- Bar 1 -->
+      <div class="flex flex-col items-center gap-2 group w-full">
+        <div
+          class="w-full max-w-[90px] bg-blue-100 dark:bg-blue-900/30 rounded-t-sm h-38 relative group-hover:bg-blue-200 transition-colors"
+        >
+          <div class="absolute bottom-0 w-full bg-primary rounded-t-sm h-[75%]"></div>
+        </div>
+        <span class="text-xs font-medium text-slate-500">North</span>
+      </div>
+      <!-- Bar 2 -->
+      <div class="flex flex-col items-center gap-2 group w-full">
+        <div
+          class="w-full max-w-[90px] bg-blue-100 dark:bg-blue-900/30 rounded-t-sm h-46 relative group-hover:bg-blue-200 transition-colors"
+        >
+          <div class="absolute bottom-0 w-full bg-primary rounded-t-sm h-[90%]"></div>
+        </div>
+        <span class="text-xs font-medium text-slate-500">South</span>
+      </div>
+      <!-- Bar 3 -->
+      <div class="flex flex-col items-center gap-2 group w-full">
+        <div
+          class="w-full max-w-[90px] bg-blue-100 dark:bg-blue-900/30 rounded-t-sm h-30 relative group-hover:bg-blue-200 transition-colors"
+        >
+          <div class="absolute bottom-0 w-full bg-primary rounded-t-sm h-[50%]"></div>
+        </div>
+        <span class="text-xs font-medium text-slate-500">East</span>
+      </div>
+      <!-- Bar 4 -->
+      <div class="flex flex-col items-center gap-2 group w-full">
+        <div
+          class="w-full max-w-[90px] bg-blue-100 dark:bg-blue-900/30 rounded-t-sm h-34 relative group-hover:bg-blue-200 transition-colors"
+        >
+          <div class="absolute bottom-0 w-full bg-primary rounded-t-sm h-[65%]"></div>
+        </div>
+        <span class="text-xs font-medium text-slate-500">West</span>
+      </div>
+    </div>
+  </div>
+</div>

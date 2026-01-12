@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
 import {Kpicard} from '../kpicard/kpicard';
 import {MainTitle} from '../main-title/main-title';
+import { GraphicsCard } from '../graphics-card/graphics-card';
+import { MapWidget } from '../map-widget/map-widget';
 
 @Component({
   selector: 'app-dashboard',
   imports: [
     Kpicard,
-    MainTitle
+    MainTitle,
+    GraphicsCard,
+    MapWidget
   ],
   templateUrl: './dashboard.html'
 })
