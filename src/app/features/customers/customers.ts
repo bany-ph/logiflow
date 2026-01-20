@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MainTitle } from '../main-title/main-title';
+import { MainTitle } from '../../shared/main-title/main-title';
 
 @Component({
   selector: 'app-customers',

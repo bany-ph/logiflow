@@ -1,14 +1,6 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Card } from "../model/card.model";
 
-@Component({
-  selector: 'app-kpicard',
-  imports: [CommonModule],
-  templateUrl: './kpicard.html',
-})
-export class Kpicard {
-
-  cards : Card[] = [
+export const DASHBOARD_KPIS_MOCK: Card[] = [
     {
       title: 'Total Active Shipments', numberData: 1240, percentageData: 5,logo: 'local_shipping', logoColor: 'blue', trending: true
     },
@@ -23,14 +15,3 @@ export class Kpicard {
     }
 
     ];
-}
-
-interface Card {
-  title: string;
-  numberData: number;
-  percentageData: number;
-  logo: string;
-  logoColor: string;
-  trending: boolean;
-}
-
