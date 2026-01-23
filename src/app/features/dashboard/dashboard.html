@@ -1,8 +1,28 @@
 
 <app-main-title [mainTitle]="pageTitle" [mainDescription]="pageDescription" ></app-main-title>
-<app-kpicard [cards]="cardsMock"></app-kpicard>
+
+    
+    @if (kpiData$ | async; as cards) {
+        
+        <app-kpicard [cards]="cards"></app-kpicard>
+
+    } @else {
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 animate-pulse">
+            <div class="h-32 bg-slate-200 dark:bg-slate-800 rounded-xl"></div>
+            <div class="h-32 bg-slate-200 dark:bg-slate-800 rounded-xl"></div>
+            <div class="h-32 bg-slate-200 dark:bg-slate-800 rounded-xl"></div>
+            <div class="h-32 bg-slate-200 dark:bg-slate-800 rounded-xl"></div>
+        </div>
+
+    }
+
+
+
+
 <div class="grid grid-cols-3 lg:grid-cols-3 gap-6 my-6">
     <app-graphics-card class="lg:col-span-2 grid-cols-2"></app-graphics-card>
     <app-map-widget class="lg:col-span-1"></app-map-widget>
 </div>
+
 
