@@ -8,6 +8,8 @@ import { AsyncPipe } from '@angular/common';
 import { DashboardService } from './dashboard.service';
 import { Observable } from 'rxjs';
 import { Card } from './model/card.model';
+import { RecentShipments } from './components/recent-shipments/recent-shipments';
+import { Shipment } from './model/shipment.model';
 
 @Component({
   selector: 'app-dashboard',
@@ -16,13 +18,15 @@ import { Card } from './model/card.model';
     Kpicard,
     MainTitle,
     GraphicsCard,
-    MapWidget
+    MapWidget,
+    RecentShipments
   ],
   templateUrl: './dashboard.html'
 })
 export class Dashboard {
   private dashboardService = inject(DashboardService);
   kpiData$!: Observable<Card[]>;
+  shipments$!: Observable<Shipment[]>;
   
   pageTitle = 'Dashboard Overview';
   pageDescription = 'Real-time logistic metrics and fleet status.';
@@ -30,6 +34,7 @@ export class Dashboard {
   ngOnInit() {
     
     this.kpiData$ = this.dashboardService.getDashboardKpis();
+    this.shipments$ = this.dashboardService.getRecentShipments();
   }
 
 }

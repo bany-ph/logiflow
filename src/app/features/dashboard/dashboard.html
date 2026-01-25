@@ -26,3 +26,10 @@
 </div>
 
 
+<div class="mb-6">
+  @if (shipments$ | async; as shipments) {
+    <app-recent-shipments [shipments]="shipments"></app-recent-shipments>
+  }
+</div>
+
+
