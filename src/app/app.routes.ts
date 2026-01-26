@@ -1,8 +1,4 @@
 import { Routes } from '@angular/router';
-import { Dashboard } from './features/dashboard/dashboard';
-import { Customers } from './features/customers/customers';
-import { MainLayout } from './layout/main-layout/main-layout';
-
 
 export const routes: Routes = [
   {
@@ -20,8 +16,13 @@ export const routes: Routes = [
       },
       {
         path: 'customers',
-        component: Customers
-      }
+        loadComponent: () => import("./features/customers/customers").then(m => m.Customers),
+      },
+      {
+        path: 'shipments',
+        loadComponent: () => import("./features/shipments/shipments").then(m => m.Shipments),
+      },
+      
     ]
 
   },
