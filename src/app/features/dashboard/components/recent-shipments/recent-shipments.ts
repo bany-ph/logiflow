@@ -15,6 +15,5 @@ import { RouterLink } from "@angular/router";
     templateUrl: './recent-shipments.html'
 })
 export class RecentShipments {
-    // 4. Convertir a Signal (Input requerido)
     shipments = input.required<Shipment[]>();
 }
