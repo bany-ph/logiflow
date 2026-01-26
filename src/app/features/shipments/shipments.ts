@@ -5,17 +5,20 @@ import { GenericContainer } from '../../shared/generic-container/generic-contain
 import { ShipmentsService } from './shipments.service';
 import { ShipmentStatus } from '../../shared/shipment-status/shipment-status';
 import { TablePagination } from '../../shared/table-pagination/table-pagination';
+import { SearchBar } from "../../shared/search-bar/search-bar";
 
 
 @Component({
   selector: 'app-shipments',
   standalone: true,
   imports: [
-    AsyncPipe, 
-    MainTitle, 
-    GenericContainer, 
+    AsyncPipe,
+    MainTitle,
+    GenericContainer,
     ShipmentStatus,
-    TablePagination],
+    TablePagination,
+    SearchBar
+],
   templateUrl: './shipments.html'
 })
 export class Shipments {
