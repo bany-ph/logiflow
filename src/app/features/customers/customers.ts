@@ -8,6 +8,7 @@ import { Customer } from './model/customer.model';
 import { ShipmentStatus } from '../../shared/shipment-status/shipment-status';
 import {CustomersKpiCard} from './components/customers-kpi-card/customers-kpi-card';
 import {CustomerResume} from './model/resume.model';
+import {SearchBar} from '../../shared/search-bar/search-bar';
 
 @Component({
   selector: 'app-customers',
@@ -17,7 +18,8 @@ import {CustomerResume} from './model/resume.model';
     MainTitle,
     GenericContainer,
     ShipmentStatus,
-    CustomersKpiCard
+    CustomersKpiCard,
+    SearchBar
   ],
   templateUrl: './customers.html'
 })
