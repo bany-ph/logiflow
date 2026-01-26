@@ -23,6 +23,7 @@ export class ShipmentStatus {
 
             case 'Exception':
             case 'Blocked':
+            case 'Incident':
                 return 'bg-red-50 text-red-700 border-red-100 dark:bg-red-900/30 dark:text-red-300 dark:border-red-800';
 
             case 'In Transit':
@@ -42,6 +43,7 @@ export class ShipmentStatus {
                 return 'bg-orange-500';
             case 'Exception': 
             case 'Blocked': 
+            case 'Incident':
                 return 'bg-red-500';
             default: 
                 return 'bg-indigo-500';

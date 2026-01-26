@@ -103,5 +103,57 @@
       "activeShipments": 21,
       "status": "Active"
     }
+  ],
+  "allShipments": [
+    {
+      "id": "1",
+      "trackingId": "#SHP-9281",
+      "status": "In Transit",
+      "customerName": "Acme Corp",
+      "customerLogo": "AC",
+      "origin": "Shanghai, CN",
+      "destination": "Los Angeles, USA",
+      "eta": "Oct 24, 2025"
+    },
+    {
+      "id": "2",
+      "trackingId": "#SHP-9282",
+      "status": "Incident",
+      "customerName": "Globex Inc.",
+      "customerLogo": "GL",
+      "origin": "Berlin, DE",
+      "destination": "Paris, FR",
+      "eta": "Delayed"
+    },
+    {
+      "id": "3",
+      "trackingId": "#SHP-9283",
+      "status": "Delivered",
+      "customerName": "Stark Ind.",
+      "customerLogo": "ST",
+      "origin": "New York, USA",
+      "destination": "London, UK",
+      "eta": "Oct 20, 2025"
+    },
+    {
+      "id": "4",
+      "trackingId": "#SHP-9284",
+      "status": "Pending",
+      "customerName": "Wayne Ent.",
+      "customerLogo": "WA",
+      "origin": "Gotham, NJ",
+      "destination": "Metropolis, NY",
+      "eta": "Oct 26, 2025"
+    },
+    {
+      "id": "5",
+      "trackingId": "#SHP-9285",
+      "status": "In Transit",
+      "customerName": "Umbrella Corp",
+      "customerLogo": "UM",
+      "origin": "Raccoon City, USA",
+      "destination": "Tokyo, JP",
+      "eta": "Oct 28, 2025"
+    }
   ]
 }
