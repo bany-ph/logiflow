@@ -1,4 +1,44 @@
-<div class="mb-4 p-2 pl-0">
-  <h2 class="text-2xl font-bold text-slate-900 dark:text-white">{{mainTitle()}}</h2>
-  <p class="text-slate-500 dark:text-slate-400 mt-1">{{mainDescription()}}</p>
+<div class="flex flex-col gap-1 mb-6">
+
+  @if (breadcrumbs().length > 0) {
+  <div class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400 mb-1">
+    @for (crumb of breadcrumbs(); track $index) {
+
+    @if (crumb.url) {
+    <a [routerLink]="crumb.url" class="hover:text-primary hover:underline transition-colors cursor-pointer">
+      {{ crumb.label }}
+    </a>
+    }
+    @else {
+    <span [class]="$last ? 'text-primary font-medium' : 'text-slate-500'">
+      {{ crumb.label }}
+    </span>
+    }
+
+    @if (!$last) {
+    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+    }
+    }
+  </div>
+  }
+
+  <div class="flex items-start justify-between gap-4">
+
+    <div>
+      <h2 class="text-3xl font-bold text-slate-900 dark:text-white tracking-tight">
+        {{ mainTitle() }}
+      </h2>
+
+      @if (mainDescription()) {
+      <p class="text-slate-500 dark:text-slate-400 text-base">
+        {{ mainDescription() }}
+      </p>
+      }
+    </div>
+
+    <div class="flex-shrink-0">
+      <ng-content></ng-content>
+    </div>
+
+  </div>
 </div>
