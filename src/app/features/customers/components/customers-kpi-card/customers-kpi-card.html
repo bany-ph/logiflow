@@ -1,0 +1,15 @@
+
+
+
+<app-generic-container>
+  <div class="flex justify-between items-start">
+    <p class="text-slate-500 dark:text-slate-400 text-sm font-medium">{{title()}}</p>
+    <span
+      class="  text-xs font-bold px-2 py-0.5 rounded-full"
+      [ngClass]="percentage() > 0
+        ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400'
+        : 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400' "
+    >{{percentage()}} %</span>
+  </div>
+  <p class="text-3xl font-bold text-slate-900 dark:text-white mt-2">{{total()}}</p>
+</app-generic-container>

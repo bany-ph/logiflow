@@ -6,6 +6,8 @@ import { CustomersService } from './customers.service';
 import { Observable } from 'rxjs';
 import { Customer } from './model/customer.model';
 import { ShipmentStatus } from '../../shared/shipment-status/shipment-status';
+import {CustomersKpiCard} from './components/customers-kpi-card/customers-kpi-card';
+import {CustomerResume} from './model/resume.model';
 
 @Component({
   selector: 'app-customers',
@@ -14,11 +16,19 @@ import { ShipmentStatus } from '../../shared/shipment-status/shipment-status';
     AsyncPipe,
     MainTitle,
     GenericContainer,
-     ShipmentStatus],
+    ShipmentStatus,
+    CustomersKpiCard
+  ],
   templateUrl: './customers.html'
 })
 export class Customers {
   private customersService = inject(CustomersService);
-  
   customers$: Observable<Customer[]> = this.customersService.getCustomers();
+  resume$: Observable<CustomerResume[]> = this.customersService.getResume();
+
+  ngOnInit(){
+
+
+  }
+
 }

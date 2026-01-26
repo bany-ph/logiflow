@@ -52,56 +52,75 @@
       "status": "Exception"
     }
   ],
-  "customers": [
-    {
-      "id": "#9921",
-      "name": "TechGlobal Inc.",
-      "logo": "TG",
-      "type": "Technology / Enterprise",
-      "contactName": "Sarah Jenkins",
-      "contactImage": "https://ui-avatars.com/api/?name=Sarah+Jenkins&background=random",
-      "activeShipments": 12,
-      "status": "Active"
-    },
-    {
-      "id": "#8832",
-      "name": "FastMove Logistics",
-      "logo": "FM",
-      "type": "Logistics / Partner",
-      "contactName": "Mike Ross",
-      "contactImage": "https://ui-avatars.com/api/?name=Mike+Ross&background=random",
-      "activeShipments": 0,
-      "status": "Inactive"
-    },
-    {
-      "id": "#7712",
-      "name": "Retail King",
-      "logo": "RK",
-      "type": "Retail / Global",
-      "contactName": "Jessica Pearson",
-      "contactImage": "https://ui-avatars.com/api/?name=Jessica+Pearson&background=random",
-      "activeShipments": 45,
-      "status": "Pending"
-    },
-    {
-      "id": "#6421",
-      "name": "Ocean Transport",
-      "logo": "OT",
-      "type": "Shipping / International",
-      "contactName": "Daniel Lee",
-      "contactImage": "https://ui-avatars.com/api/?name=Daniel+Lee&background=random",
-      "activeShipments": 8,
-      "status": "Active"
-    },
-    {
-      "id": "#5119",
-      "name": "Apex Freight",
-      "logo": "AF",
-      "type": "Cargo / Local",
-      "contactName": "Emily Chen",
-      "contactImage": "https://ui-avatars.com/api/?name=Emily+Chen&background=random",
-      "activeShipments": 21,
-      "status": "Active"
-    }
-  ]
+  "customers": {
+    "data": [
+      {
+        "id": "#9921",
+        "name": "TechGlobal Inc.",
+        "logo": "TG",
+        "type": "Technology / Enterprise",
+        "contactName": "Sarah Jenkins",
+        "contactImage": "https://ui-avatars.com/api/?name=Sarah+Jenkins&background=random",
+        "activeShipments": 12,
+        "status": "Active"
+      },
+      {
+        "id": "#8832",
+        "name": "FastMove Logistics",
+        "logo": "FM",
+        "type": "Logistics / Partner",
+        "contactName": "Mike Ross",
+        "contactImage": "https://ui-avatars.com/api/?name=Mike+Ross&background=random",
+        "activeShipments": 0,
+        "status": "Inactive"
+      },
+      {
+        "id": "#7712",
+        "name": "Retail King",
+        "logo": "RK",
+        "type": "Retail / Global",
+        "contactName": "Jessica Pearson",
+        "contactImage": "https://ui-avatars.com/api/?name=Jessica+Pearson&background=random",
+        "activeShipments": 45,
+        "status": "Pending"
+      },
+      {
+        "id": "#6421",
+        "name": "Ocean Transport",
+        "logo": "OT",
+        "type": "Shipping / International",
+        "contactName": "Daniel Lee",
+        "contactImage": "https://ui-avatars.com/api/?name=Daniel+Lee&background=random",
+        "activeShipments": 8,
+        "status": "Active"
+      },
+      {
+        "id": "#5119",
+        "name": "Apex Freight",
+        "logo": "AF",
+        "type": "Cargo / Local",
+        "contactName": "Emily Chen",
+        "contactImage": "https://ui-avatars.com/api/?name=Emily+Chen&background=random",
+        "activeShipments": 21,
+        "status": "Active"
+      }
+    ],
+    "resume": [
+      {
+        "title": "Total Clients",
+        "percentage": 5,
+        "total": 20
+      },
+      {
+        "title": "Active Now",
+        "percentage": 12,
+        "total": 10
+      },
+      {
+        "title": "Pending Approval",
+        "percentage": -2,
+        "total": 2
+      }
+    ]
+  }
 }
